@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Notes\Commands\" />
+    <Folder Include="Notes\Entities\" />
+    <Folder Include="Notes\Queries\" />
+    <Folder Include="Users\Commands\" />
+    <Folder Include="Users\Entities\" />
+    <Folder Include="Users\Queries\" />
+  </ItemGroup>
+
+</Project>
