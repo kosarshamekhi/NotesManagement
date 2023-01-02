@@ -4,6 +4,7 @@ using NotesManagement.DAL.DbContexts;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddDbContext<NoteContext>(c => c.UseInMemoryDatabase("Server=.; Initial Catalog=NotesManagement; Integrated Security = SSPI; TrustServerCertificate=True"));
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
