@@ -15,12 +15,13 @@ public static class ModelBuilderExtensions
             LastName = "Hoseyni",
             Email = "AliHoseyni@gmail.com",
             Age = 20,
-            Website = ""
+            Website = "",
+            Notes = new List<Note>
+            {
+                new Note { Content = " Salam ", DateCreated = DateTime.Now, DateModified = DateTime.Now, Views = 5, Published = true },
+                new Note { Content = "My Name is Kosar", DateCreated = DateTime.Now, DateModified = DateTime.Now, Views = 5, Published = true }
+            }
         }
-        );
-        modelBuilder.Entity<Note>().HasData(
-            new Note { Content = " Salam ", DateCreated = DateTime.Now, DateModified = DateTime.Now, Views = 5, Published = true },
-            new Note { Content = "My Name is Kosar", DateCreated = DateTime.Now, DateModified = DateTime.Now, Views = 5, Published = true }
         );
 
         modelBuilder.Entity<User>().HasData(
@@ -30,12 +31,13 @@ public static class ModelBuilderExtensions
             LastName = "Rahimi",
             Email = "zahraRahimi@gmail.com",
             Age = 34,
-            Website = ""
+            Website = "",
+            Notes = new List<Note>
+            {
+                new Note { Content = "Hiiiiiii", DateCreated = DateTime.Now, DateModified = DateTime.Now, Views = 5, Published = true },
+                new Note { Content = "My Name is Zahraaaaaaaa", DateCreated = DateTime.Now, DateModified = DateTime.Now, Views = 5, Published = true }
+            }
         }
-        );
-        modelBuilder.Entity<Note>().HasData(
-            new Note { Content = "Hiiiiiii", DateCreated = DateTime.Now, DateModified = DateTime.Now, Views = 5, Published = true },
-            new Note { Content = "My Name is Zahraaaaaaaa", DateCreated = DateTime.Now, DateModified = DateTime.Now, Views = 5, Published = true }
         );
 
         modelBuilder.Entity<User>().HasData(
@@ -45,12 +47,13 @@ public static class ModelBuilderExtensions
             LastName = "Rahimi",
             Email = "zahraRahimi@gmail.com",
             Age = 34,
-            Website = ""
+            Website = "",
+            Notes = new List<Note>
+            {
+                new Note { Content = "Hiiiiiii", DateCreated = DateTime.Now, DateModified = DateTime.Now, Views = 5, Published = true },
+                new Note { Content = "My Name is Zahraaaaaaaa", DateCreated = DateTime.Now, DateModified = DateTime.Now, Views = 5, Published = true }
+            }
         }
-        );
-        modelBuilder.Entity<Note>().HasData(
-            new Note { Content = "Hiiiiiii", DateCreated = DateTime.Now, DateModified = DateTime.Now, Views = 5, Published = true },
-            new Note { Content = "My Name is Zahraaaaaaaa", DateCreated = DateTime.Now, DateModified = DateTime.Now, Views = 5, Published = true }
         );
     }
 }

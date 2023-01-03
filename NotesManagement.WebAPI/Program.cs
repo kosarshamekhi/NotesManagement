@@ -1,10 +1,12 @@
 using Microsoft.EntityFrameworkCore;
 using NotesManagement.DAL.DbContexts;
+using NotesManagement.DAL.Users;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddDbContext<NoteContext>(c => c.UseInMemoryDatabase("Server=.; Initial Catalog=NotesManagement; Integrated Security = SSPI; TrustServerCertificate=True"));
+builder.Services.AddDbContext<NoteDbContext>(c => c.UseInMemoryDatabase("Server=.; Initial Catalog=NotesManagement; Integrated Security = SSPI; TrustServerCertificate=True"));
+builder.Services.AddScoped<IUserRepository, UserRepository>();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
