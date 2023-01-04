@@ -7,6 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="MediatR" Version="11.1.0" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.1">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -23,6 +25,12 @@
     <ProjectReference Include="..\NotesManagement.BLL\NotesManagement.BLL.csproj" />
     <ProjectReference Include="..\NotesManagement.DAL\NotesManagement.DAL.csproj" />
     <ProjectReference Include="..\NotesManagement.Model\NotesManagement.Model.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Framework\" />
+    <Folder Include="Notes\" />
+    <Folder Include="Users\" />
   </ItemGroup>
 
 </Project>

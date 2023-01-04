@@ -11,4 +11,14 @@
     <ProjectReference Include="..\NotesManagement.Model\NotesManagement.Model.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Notes\Commands\" />
+    <Folder Include="Notes\Queries\" />
+    <Folder Include="Users\Queries\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="11.1.0" />
+  </ItemGroup>
+
 </Project>
